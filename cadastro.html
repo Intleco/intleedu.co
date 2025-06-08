@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Cadastro - Intle.co</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6B46C1 0%, #4299E1 100%);
+        }
+        .btn-hover-effect {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="gradient-bg text-white">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <a href="#" class="text-2xl font-bold flex items-center">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            <span>Intle.co</span>
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="index.html" class="hover:underline">Página Inicial</a>
+                        <a href="conhecanos.html" class="hover:underline">Sobre</a>
+                        <a href="https://wa.me/553799247508" class="hover:underline">Contato</a>
+                    </nav>
+                    <button class="md:hidden focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="gradient-bg text-white p-8 text-center">
+                        <h1 class="text-3xl font-bold mb-4">Finalize seu Cadastro</h1>
+                        <p class="text-white/90">Estamos quase lá! Complete seu cadastro para continuar no processo seletivo.</p>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Instruções Importantes</h2>
+                            <p class="text-gray-600 mb-4">
+                                Agradecemos o seu interesse na vaga de Atendente Virtual na Intle.co. Para darmos continuidade ao processo seletivo, é fundamental que você complete a etapa final do seu cadastro.
+                            </p>
+                            <p class="text-gray-600 mb-6">
+                                Por favor, clique no link abaixo para acessar o formulário e fornecer as informações restantes. O preenchimento levará apenas alguns minutos. Após o envio, sua candidatura estará completa e será analisada por nossa equipe.
+                            </p>
+                            
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 rounded">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-info-circle text-blue-500 mt-1"></i>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-blue-700">
+                                            Não esqueça de revisar todas as informações antes de enviar o formulário. 
+                                            Qualquer dúvida, entre em contato com nosso RH através do email: rh@intle.co
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="https://forms.gle/pGycVEtuo4NhRFpC7" 
+                               target="_blank"
+                               class="inline-block gradient-bg text-white font-bold py-4 px-8 rounded-full btn-hover-effect">
+                                <i class="fas fa-external-link-alt mr-2"></i>
+                                Clique aqui para finalizar seu cadastro
+                            </a>
+                            
+                            <p class="mt-6 text-gray-500">
+                                Você será redirecionado para o formulário do Google Forms
+                            </p>
+                            
+                            <div class="mt-8 pt-6 border-t border-gray-200">
+                                <p class="text-gray-600">
+                                    Atenciosamente,<br>
+                                    <span class="font-semibold">Equipe de Recrutamento Intle.co</span>
+                                </p>
+                                
+                                <div class="mt-6 flex justify-center space-x-4">
+                                    <a href="https://wa.me/553799247508" target="_blank" class="text-green-500 hover:text-blue-700">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/intle_co/" target="_blank" class="text-pink-400 hover:text-blue-600">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://t.me/+j7f1qHN1tCllZTBh" target="_blank" class="text-blue-600 hover:text-pink-800">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="gradient-bg text-white pt-8 relative">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center pb-12">
+                    <div class="mb-6 md:mb-0">
+                        <a href="#" class="text-2xl font-bold flex items-center">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            <span>Intle.co</span>
+                        </a>
+                        <p class="mt-2 text-white/80">Educação que transforma.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:space-x-12">
+                        <div class="mb-4 md:mb-0">
+                            <h3 class="font-semibold mb-2">Author</h3>
+                            <ul class="space-y-2">
+                                <li><a href="https://t.me/jeanluccaprado" class="fab fa-telegram"></i>
+                                <li><a href="#" class="hover:underline"></a></li>
+                                <li><a href="#" class="hover:underline"></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Contato</h3>
+                            <ul class="space-y-2">
+                                <li><i class="fas fa-envelope mr-2"></i> intleedu.co@gmail.com</li>
+                                <li><i class="fas fa-phone mr-2"></i> (37) 999247508</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-white/20 pt-6 pb-4 text-center text-sm">
+                    <p>&copy; 2022 Intle.co - Todos os direitos reservados</p>
+                </div>
+            </div>
+            <div class="wave-shape">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

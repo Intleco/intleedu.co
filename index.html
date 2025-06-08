@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intle.co - Educação que transforma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-secondary {
+            background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" target="_self" class="text-2xl font-bold text-indigo-700">Intle.co</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Início</a>
+                    <a href="conhecanos.html" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
+                    <a href="https://wa.me/553799247508" target="_blank" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contato</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Início</a></li>
+                <li><a href="conhecanos.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Sobre</a></li>
+                <li><a href="https://wa.me/553799247508" target="_blank" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white fade-in">
+        <div class="container mx-auto px-6 py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Educação que transforma</h1>
+                <p class="text-lg md:text-xl mb-8">
+                    Intle é uma plataforma de cursos e mentorias online criada com o propósito de transformar vidas por meio da educação. Acreditamos no poder do conhecimento para promover crescimento pessoal e profissional.
+                </p>
+                <p class="text-lg md:text-xl mb-12">
+                    Com qualidade, acolhimento e acessibilidade, impactamos pessoas no Brasil e no mundo. Nosso compromisso é oferecer uma experiência única, humana e transformadora desde o primeiro clique até a conquista final.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="cadastro.html" class="btn-primary text-white font-semibold py-3 px-8 rounded-full">Cadastro</a>
+                    <a href="conhecanos.html" class="btn-secondary text-white font-semibold py-3 px-8 rounded-full">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Intle.co</h2>
+                    <p class="mt-2 text-gray-400">Educação que transforma</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://wa.me/553799247508" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/+j7f1qHN1tCllZTBh" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/intle_co/" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-gray-400 text-sm text-center">
+                <p>© 2022 Intle.co. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Show sections based on URL hash
+            function showSection() {
+                const hash = window.location.hash;
+                const allSections = document.querySelectorAll('main > section');
+                
+                allSections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+                
+                if (hash === '#cadastro' || hash === '#conheca-nos') {
+                    document.querySelector(hash).classList.remove('hidden');
+                    document.querySelector('header').classList.add('hidden');
+                    document.querySelector('section.hero-gradient').classList.add('hidden');
+                } else {
+                    document.querySelector('header').classList.remove('hidden');
+                    document.querySelector('section.hero-gradient').classList.remove('hidden');
+                }
+            }
+
+            // Initial check
+            showSection();
+            
+            // Listen for hash changes
+            window.addEventListener('hashchange', showSection);
+        });
+    </script>
+</body>
+</html>

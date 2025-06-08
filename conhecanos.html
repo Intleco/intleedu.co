@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça a Intle - Educação que Transforma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .section-divider {
+            height: 100px;
+            background-color: #eff6ff;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+        }
+        .flip-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            backface-visibility: hidden;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-graduation-cap text-3xl"></i>
+                    <a href="index.html" class="text-2xl font-bold">Intle.co</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-blue-200 transition">Início</a>
+                    <a href="#" class="font-bold border-b-2 border-white">Sobre</a>
+                    <a href="cadastro.html" class="hover:text-blue-200 transition">Cadastro</a>
+                </nav>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden py-4" id="mobile-menu">
+                <a href="index.html" class="block py-2 hover:bg-blue-700 px-2 rounded">Início</a>
+                <a href="conhecanos.html" class="block py-2 bg-blue-700 px-2 rounded">Sobre-nos</a>
+                <a href="cadastro.html" class="block py-2 hover:bg-blue-700 px-2 rounded">Cadastro</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Conheça a Intle</h1>
+            <p class="text-xl md:text-2xl max-w-3xl">Transformando Estudo em Propósito</p>
+            <div class="mt-8">
+                <a href="#about" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover-scale shadow-lg hover:bg-gray-100 transition">
+                    Saiba Mais <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Transformando Estudo em Propósito</h2>
+                <p class="text-lg text-gray-600 mb-6">A Intle nasceu da crença de que o estudo pode ser mais do que uma obrigação — ele pode ser uma jornada transformadora.</p>
+                <p class="text-lg text-gray-600">Fundada com o propósito de guiar estudantes em direção ao autoconhecimento, à disciplina e à realização de seus objetivos, a Intle é uma empresa especializada em mentorias para estudo personalizadas, com foco em resultado e atendimento totalmente on-line.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 mb-20">
+                <div class="w-full md:w-1/2">
+                    <img src="img/tablet2.jpg" 
+                         alt="Estudantes aprendendo" 
+                         class="rounded-lg shadow-xl hover-scale transition w-full h-auto">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Inteligência aliada à intenção</h3>
+                    <p class="text-gray-600 mb-4">Nosso nome carrega a essência do que somos: Intle é sinônimo de inteligência aliada à intenção. Acreditamos que, quando se estuda com clareza, estratégia e acompanhamento certo, qualquer pessoa pode alcançar seu máximo potencial — de onde estiver.</p>
+                    <div class="flex items-center space-x-4 mt-6">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <i class="fas fa-lightbulb text-blue-600 text-xl"></i>
+                        </div>
+                        <p class="text-gray-700">Mentorias especializadas para cada objetivo</p>
+                    </div>
+                    <div class="flex items-center space-x-4 mt-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <i class="fas fa-globe text-blue-600 text-xl"></i>
+                        </div>
+                        <p class="text-gray-700">Atendimento em todo o Brasil e no mundo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Feature -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <img src="img/TABLET.jpg" 
+                         alt="Plataforma online" 
+                         class="rounded-lg shadow-xl hover-scale transition w-full h-auto">
+                </div>
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">100% On-line, 100% Presente</h2>
+                    <p class="text-gray-600 mb-6">A Intle foi criada para atender estudantes de todo o Brasil (e do mundo), sem barreiras geográficas. Todas as nossas mentorias são realizadas de forma remota, com uso de ferramentas digitais acessíveis, o que garante flexibilidade, agilidade e conexão real, independente da localização.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Benefícios do formato online</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Acesso de qualquer lugar</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Flexibilidade de horários</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Economia de tempo com deslocamento</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Acompanhamento constante via plataforma</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purpose Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Nosso Propósito</h2>
+                <p class="text-lg text-gray-600">O propósito da Intle é descomplicar o processo de aprender. Sabemos que muitos estudantes se sentem perdidos, desmotivados ou sobrecarregados com tanta informação e pressão. Por isso, oferecemos mentorias com foco individualizado, que ajudam cada aluno a criar uma rotina de estudos eficaz, entender seu próprio ritmo e desenvolver habilidades como foco, organização e resiliência.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition shadow-md hover:shadow-lg">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-brain text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Mudança de Mentalidade</h3>
+                    <p class="text-gray-600">Mais do que ensinar métodos, a Intle promove uma mudança de mentalidade. Cada sessão de mentoria é um passo na construção de uma relação mais saudável com o aprendizado.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition shadow-md hover:shadow-lg">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-graduation-cap text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Preparação Integral</h3>
+                    <p class="text-gray-600">Preparamos o estudante não apenas academicamente, mas para os desafios da vida, desenvolvendo habilidades socioemocionais essenciais para o sucesso em qualquer área.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Como Atuamos</h2>
+                <p class="text-lg text-gray-600">Nossa abordagem é personalizada para cada estudante, com metodologias comprovadas e acompanhamento especializado.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Flip Card 1 -->
+                <div class="flip-card h-64">
+                    <div class="flip-card-inner h-full">
+                        <div class="flip-card-front bg-white p-6 rounded-xl shadow-md flex flex-col justify-center items-center">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-user-friends text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-center text-gray-800">Mentorias Personalizadas</h3>
+                        </div>
+                        <div class="flip-card-back bg-blue-600 text-white p-6 rounded-xl flex flex-col justify-center">
+                            <p class="text-center">Individuais ou em grupo, adaptadas às necessidades específicas de cada estudante, com foco em resultados mensuráveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 2 -->
+                <div class="flip-card h-64">
+                    <div class="flip-card-inner h-full">
+                        <div class="flip-card-front bg-white p-6 rounded-xl shadow-md flex flex-col justify-center items-center">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-calendar-check text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-center text-gray-800">Planejamento de Estudos</h3>
+                        </div>
+                        <div class="flip-card-back bg-blue-600 text-white p-6 rounded-xl flex flex-col justify-center">
+                            <p class="text-center">Cronogramas sob medida, considerando o tempo disponível, objetivos e estilo de aprendizado de cada aluno.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 3 -->
+                <div class="flip-card h-64">
+                    <div class="flip-card-inner h-full">
+                        <div class="flip-card-front bg-white p-6 rounded-xl shadow-md flex flex-col justify-center items-center">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-tasks text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-center text-gray-800">Acompanhamento Semanal</h3>
+                        </div>
+                        <div class="flip-card-back bg-blue-600 text-white p-6 rounded-xl flex flex-col justify-center">
+                            <p class="text-center">Metas claras e avaliação constante do progresso, com ajustes conforme necessário para garantir o melhor desempenho.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 4 -->
+                <div class="flip-card h-64">
+                    <div class="flip-card-inner h-full">
+                        <div class="flip-card-front bg-white p-6 rounded-xl shadow-md flex flex-col justify-center items-center">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-heart text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-center text-gray-800">Habilidades Socioemocionais</h3>
+                        </div>
+                        <div class="flip-card-back bg-blue-600 text-white p-6 rounded-xl flex flex-col justify-center">
+                            <p class="text-center">Desenvolvimento de foco, organização, resiliência e outras competências essenciais para o aprendizado e a vida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 5 -->
+                <div class="flip-card h-64">
+                    <div class="flip-card-inner h-full">
+                        <div class="flip-card-front bg-white p-6 rounded-xl shadow-md flex flex-col justify-center items-center">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-hands-helping text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-center text-gray-800">Suporte Motivacional</h3>
+                        </div>
+                        <div class="flip-card-back bg-blue-600 text-white p-6 rounded-xl flex flex-col justify-center">
+                            <p class="text-center">Orientações estratégicas e acompanhamento personalizado para manter o foco e a motivação em alta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flip Card 6 -->
+                <div class="flip-card h-64">
+                    <div class="flip-card-inner h-full">
+                        <div class="flip-card-front bg-white p-6 rounded-xl shadow-md flex flex-col justify-center items-center">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-clock text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-center text-gray-800">Flexibilidade de Horários</h3>
+                        </div>
+                        <div class="flip-card-back bg-blue-600 text-white p-6 rounded-xl flex flex-col justify-center">
+                            <p class="text-center">Atendimento adaptado à rotina do estudante, com horários diversos para garantir a melhor experiência de aprendizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Whom -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">A Intle é para você que...</h2>
+                <p class="text-xl text-gray-600 mb-12">Deseja estudar com propósito, com a liberdade de fazer isso de qualquer lugar.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-lg hover-scale transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-university text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Prepara para vestibular</h3>
+                        <p class="text-gray-600">Métodos eficazes para os principais vestibulares do país.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg hover-scale transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-file-alt text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Estuda para concursos</h3>
+                        <p class="text-gray-600">Estratégias específicas para cada tipo de concurso público.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg hover-scale transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-book-open text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Busca desempenho acadêmico</h3>
+                        <p class="text-gray-600">Melhore suas notas e aprenda com mais qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para transformar vidas através de estudos?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Junte-se a milhares de estudantes que já descobriram o poder de aprender com propósito.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="cadastro.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover-scale shadow-lg hover:bg-gray-100 transition">
+                    Comece Agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="index.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover-scale hover:bg-white hover:text-blue-600 transition">
+                    Voltar para o Início
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-blue-400"></i>
+                        <span class="text-xl font-bold">Intle.co</span>
+                    </div>
+                    <p class="text-gray-400">Educação que transforma vidas por meio de mentorias online personalizadas.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navegação</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="conhecanos.html" class="text-gray-400 hover:text-white transition">Conheça-nos</a></li>
+                        <li><a href="cadastro.html" class="text-gray-400 hover:text-white transition">Cadastro</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>intleedu.co@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/553799247508" target="_blank" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/+j7f1qHN1tCllZTBh" target="_blank" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/intle_co/" target="_blank" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2022 Intle.co - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
